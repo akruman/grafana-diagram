@@ -356,14 +356,6 @@ System.register(['./libs/mermaid/dist/mermaidAPI', 'app/core/time_series2', 'app
           value: function updateDiagram(data) {
             var _this3 = this;
 
-            if (this.series) {
-              if (this.series[0]) {
-                console.log("this series", this.series[0]);
-                this.panel.content = this.series[0].stats.first.replace(/;/g, "\n");
-                this.panel.content = this.panel.content.replace(/\/Common\//g, "");
-              }
-            }
-
             if (this.panel.content.length > 0) {
               var mode;
               var templatedURL;
